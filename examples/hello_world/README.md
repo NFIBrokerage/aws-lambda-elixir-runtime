@@ -7,22 +7,28 @@ A bare-minimum Lambda function written in Elixir.
 This example is ready to deploy. It needs to be built and bundled:
 
 ```
-> mix deps.get
-> mix do release, bootstrap, zip
+mix deps.get
+mix do release, bootstrap, zip
 ```
 
 This creates a file called ```lambda.zip``` in the current directory.
+
 Use the AWS CLI to create the function like so:
-
-
 ```
-> aws lambda create-function \
-    --region $AWS_REGION \
-    --function-name HelloWorld \
-    --handler Elixir.HelloWorld:hello_world \
-    --role $ROLE_ARN \
-    --runtime provided \
-    --zip-file fileb://./lambda.zip
+aws lambda create-function \
+  --region $AWS_REGION \
+  --function-name HelloWorld \
+  --handler Elixir.HelloWorld:hello_world \
+  --role $ROLE_ARN \
+  --runtime provided \
+  --zip-file fileb://./lambda.zip
+```
+
+Update the function code with:
+```
+aws lambda update-function-code \
+  --function-name HelloWorld \
+  --zip-file fileb://./lambda.zip
 ```
 
 This requires that you have already set the ```AWS_REGION``` and ```ROLE_ARN```
