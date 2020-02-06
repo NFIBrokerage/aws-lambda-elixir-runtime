@@ -43,8 +43,3 @@ defmodule HelloWorld do
     :ok
   end
 end
-
-defmodule ExStreamClient do
-  use ExStream
-  @moduledoc false
-end
