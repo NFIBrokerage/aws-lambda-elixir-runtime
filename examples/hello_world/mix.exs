@@ -25,7 +25,9 @@ defmodule HelloWorld.MixProject do
   defp deps do
     [
       {:aws_lambda_elixir_runtime, path: "../../elixir_runtime"},
-      {:distillery, "~> 2.0"}
+      # drop back to distillery 2.0.12.
+      # instructions and rel/config.exs ain't ready for newer distillery
+      {:distillery, "2.0.12", runtime: false}
     ]
   end
 end
