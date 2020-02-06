@@ -36,6 +36,8 @@ defmodule HelloWorld do
     """
     |> Logger.info()
 
+    # If the ExStreamClient isn't stopped, we get sporadic failures from
+    # repeated lambda calls.
     GenServer.stop(ex_stream_client_pid)
 
     :ok
