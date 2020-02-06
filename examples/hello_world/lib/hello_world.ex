@@ -16,8 +16,8 @@ defmodule HelloWorld do
   @spec hello_world(Map.t(), Map.t()) :: Term
   def hello_world(request, context) when is_map(request) and is_map(context) do
     """
-    Hello World!
-    Got reqeust #{Kernel.inspect(request)}
+    Hellooooo World!
+    Got request #{Kernel.inspect(request)}
     Got Context #{Kernel.inspect(context)}
     """
     |> Logger.info()
