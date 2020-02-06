@@ -32,5 +32,3 @@ AWS Console (just navigate to Lambda and Create Function).
 Note that the *handler string* is in the format ```module:function```. Also,
 remember that Elixir modules have the ```Elixir.``` prefix to prevent clashes
 with Erlang modules.
-
-
