@@ -1,5 +1,12 @@
 %{
+  "aggregate_repo": {:hex, :aggregate_repo, "1.0.0", "30240e29ac0898bad90a0dae80b6e225ef271f10cb0743bb58d90fc743b3c65e", [:mix], [{:ex_stream, "~> 1.19", [hex: :ex_stream, repo: "hexpm:cuatro", optional: false]}], "hexpm:cuatro"},
   "artificery": {:hex, :artificery, "0.4.2", "3ded6e29e13113af52811c72f414d1e88f711410cac1b619ab3a2666bbd7efd4", [:mix], [], "hexpm"},
   "distillery": {:hex, :distillery, "2.0.12", "6e78fe042df82610ac3fa50bd7d2d8190ad287d120d3cd1682d83a44e8b34dfb", [:mix], [{:artificery, "~> 0.2", [hex: :artificery, repo: "hexpm", optional: false]}], "hexpm"},
+  "elixir_uuid": {:hex, :elixir_uuid, "1.2.1", "dce506597acb7e6b0daeaff52ff6a9043f5919a4c3315abb4143f0b00378c097", [:mix], [], "hexpm"},
+  "ex_stream": {:hex, :ex_stream, "1.19.1", "d82885978b7f60ddfc46b769b2c04aa614906ce42c7cc13ddc04ba3882fc187f", [:mix], [{:extreme, "~> 1.0.0", [hex: :extreme, repo: "hexpm:cuatro", optional: false]}, {:poison, "~> 3.1", [hex: :poison, repo: "hexpm", optional: false]}, {:private, "~> 0.1.1", [hex: :private, repo: "hexpm", optional: false]}], "hexpm:cuatro"},
+  "exprotobuf": {:hex, :exprotobuf, "1.2.17", "3003937da617f588a8fb63ebdd7b127a18d78d6502623c272076fd54c07c4de1", [:mix], [{:gpb, "~> 4.0", [hex: :gpb, repo: "hexpm", optional: false]}], "hexpm"},
+  "extreme": {:hex, :extreme, "1.0.0", "cb98529653cbfc416e98e47eb392bb54738b45481e999fdc0f3090612afbf006", [:mix], [{:elixir_uuid, "~> 1.2", [hex: :elixir_uuid, repo: "hexpm", optional: false]}, {:exprotobuf, "~> 1.2.9", [hex: :exprotobuf, repo: "hexpm", optional: false]}, {:jason, "~> 1.1", [hex: :jason, repo: "hexpm", optional: true]}], "hexpm:cuatro"},
+  "gpb": {:hex, :gpb, "4.11.0", "819ca9269958ee0ab13bb577b0e958440393131a31825138d3ecc0ffcce2411a", [:make, :rebar], [], "hexpm"},
   "poison": {:hex, :poison, "3.1.0", "d9eb636610e096f86f25d9a46f35a9facac35609a7591b3be3326e99a0484665", [:mix], [], "hexpm"},
+  "private": {:hex, :private, "0.1.1", "6227bd343bebd843e62d7bc4dba8fe970aeb0f567a33cf4249b93ef6319fa90f", [:mix], [], "hexpm"},
 }

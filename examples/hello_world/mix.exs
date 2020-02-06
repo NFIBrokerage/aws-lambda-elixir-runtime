@@ -27,7 +27,8 @@ defmodule HelloWorld.MixProject do
       {:aws_lambda_elixir_runtime, path: "../../elixir_runtime"},
       # drop back to distillery 2.0.12.
       # instructions and rel/config.exs ain't ready for newer distillery
-      {:distillery, "2.0.12", runtime: false}
+      {:distillery, "2.0.12", runtime: false},
+      {:aggregate_repo, "~> 1.0.0", organization: "cuatro"}
     ]
   end
 end
